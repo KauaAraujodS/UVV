@@ -1,0 +1,89 @@
+<circuit version="" rev="1751" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" >
+
+<item itemtype="Subcircuit" CircId="74HC4022-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-244,-212" rotation="0" hflip="1" vflip="1" label="74HC4022-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+09 Ω" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" Logic_Symbol="true" />
+
+<item itemtype="Clock" CircId="Clock-2" mainComp="false" ShowProp="Freq" Show_id="false" Show_Val="true" Pos="-312,-204" rotation="0" hflip="1" vflip="1" label="Clock-2" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Voltage="5 V" Freq="2 Hz" Always_On="false" />
+
+<item itemtype="LedBar" CircId="LedBar-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-100,-180" rotation="0" hflip="1" vflip="1" label="LedBar-3" idLabPos="-16,-44" labelrot="0" valLabPos="-16,-56" valLabRot="0" Size="8 _Leds" Color="Yellow" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="ResistorDip" CircId="ResistorDip-4" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-156,-180" rotation="0" hflip="1" vflip="1" label="ResistorDip-4" idLabPos="-24,-40" labelrot="0" valLabPos="5,-26" valLabRot="90" Resistance="100 Ω" Size="8 _Resist." PullUp="false" PuVolt="5 V" />
+
+<item itemtype="Switch" CircId="Switch-5" mainComp="false" Show_id="false" Show_Val="false" Pos="-220,-88" rotation="0" hflip="1" vflip="1" label="Switch-5" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" />
+
+<item itemtype="Ground" CircId="Ground-7" mainComp="false" Show_id="false" Show_Val="false" Pos="-268,-164" rotation="0" hflip="1" vflip="1" label="Ground-7" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="TextComponent" CircId="TextComponent-8" mainComp="false" Show_id="false" Show_Val="false" Pos="-536,-52" rotation="0" hflip="1" vflip="1" label="TextComponent-8" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Font_Color="#000080" Fixed_Width="false" Text="O contador Johnson ativa, sequencialmente, apenas uma saída a cada vez.&#xa;O terminal CE &#x3D 0 permite o funcionamento do contador.&#xa;CE &#x3D 1 desativa o contador.&#xa;O terminal MR &#x3D 1 reseta o contador ativando a saída Q0.&#xa;O terminal MR &#x3D 0 permite o funcionamento do contador.&#xa;A chave CH aberta faz o contador percorrer todas as saídas.&#xa;A chave CH fechada provoca o RESET do contador ao chegar à saída Q5.&#xa;O circuito contendo capacitor, resistor e diodo realizam o RESET automático inicial do contador." />
+
+<item itemtype="Resistor" CircId="Resistor-9" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-324,-108" rotation="-90" hflip="1" vflip="1" label="Resistor-9" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="10 kΩ" />
+
+<item itemtype="elCapacitor" CircId="elCapacitor-10" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="-356,-132" rotation="0" hflip="1" vflip="1" label="elCapacitor-10" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="1 µF" Resistance="1e-06 Ω" InitVolt="0 V" AutoStep="0 _Steps" />
+
+<item itemtype="Ground" CircId="Ground-11" mainComp="false" Show_id="false" Show_Val="false" Pos="-324,-68" rotation="0" hflip="1" vflip="1" label="Ground-11" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-12" mainComp="false" Show_id="false" Show_Val="false" Pos="-404,-132" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-12" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Diode" CircId="Diode-24" mainComp="false" Show_id="false" Show_Val="false" Pos="-296,-132" rotation="0" hflip="1" vflip="1" label="Diode-24" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Node" CircId="Node-6" mainComp="false" Pos="-180,-164" />
+
+<item itemtype="Node" CircId="Node-25" mainComp="false" Pos="-324,-132" />
+
+<item itemtype="Node" CircId="Node-27" mainComp="false" Pos="-268,-132" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="Clock-2-outnod" endpinid="74HC4022-1-CLK" pointList="-296,-204,-252,-204" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="ResistorDip-4-resistor0-ePin0" endpinid="74HC4022-1-Q0" pointList="-172,-204,-196,-204" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="ResistorDip-4-resistor1-ePin2" endpinid="74HC4022-1-Q1" pointList="-172,-196,-196,-196" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="ResistorDip-4-resistor2-ePin4" endpinid="74HC4022-1-Q2" pointList="-172,-188,-196,-188" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="ResistorDip-4-resistor3-ePin6" endpinid="74HC4022-1-Q3" pointList="-172,-180,-196,-180" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="ResistorDip-4-resistor4-ePin8" endpinid="74HC4022-1-Q4" pointList="-172,-172,-196,-172" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="ResistorDip-4-resistor5-ePin10" endpinid="Node-6-0" pointList="-172,-164,-180,-164" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="ResistorDip-4-resistor6-ePin12" endpinid="74HC4022-1-Q6" pointList="-172,-156,-196,-156" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="ResistorDip-4-resistor7-ePin14" endpinid="74HC4022-1-Q7" pointList="-172,-148,-196,-148" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="ResistorDip-4-resistor0-ePin1" endpinid="LedBar-3-led0-pinP" pointList="-140,-204,-116,-204" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="ResistorDip-4-resistor1-ePin3" endpinid="LedBar-3-led1-pinP" pointList="-140,-196,-116,-196" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="ResistorDip-4-resistor2-ePin5" endpinid="LedBar-3-led2-pinP" pointList="-140,-188,-116,-188" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="ResistorDip-4-resistor3-ePin7" endpinid="LedBar-3-led3-pinP" pointList="-140,-180,-116,-180" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="ResistorDip-4-resistor4-ePin9" endpinid="LedBar-3-led4-pinP" pointList="-140,-172,-116,-172" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="ResistorDip-4-resistor5-ePin11" endpinid="LedBar-3-led5-pinP" pointList="-140,-164,-116,-164" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="ResistorDip-4-resistor6-ePin13" endpinid="LedBar-3-led6-pinP" pointList="-140,-156,-116,-156" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="ResistorDip-4-resistor7-ePin15" endpinid="LedBar-3-led7-pinP" pointList="-140,-148,-116,-148" />
+
+<item itemtype="Connector" uid="Connector-30" startpinid="Node-6-1" endpinid="Switch-5-switch0pinN" pointList="-180,-164,-180,-88,-204,-88" />
+
+<item itemtype="Connector" uid="Connector-31" startpinid="Node-6-2" endpinid="74HC4022-1-Q5" pointList="-180,-164,-196,-164" />
+
+<item itemtype="Connector" uid="Connector-32" startpinid="Ground-7-Gnd" endpinid="74HC4022-1-!CE" pointList="-268,-180,-268,-188,-252,-188" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="Ground-11-Gnd" endpinid="Resistor-9-lPin" pointList="-324,-84,-324,-92" />
+
+<item itemtype="Connector" uid="Connector-44" startpinid="elCapacitor-10-lPin" endpinid="Fixed Voltage-12-outnod" pointList="-372,-132,-388,-132" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="Resistor-9-rPin" endpinid="Node-25-0" pointList="-324,-124,-324,-132" />
+
+<item itemtype="Connector" uid="Connector-47" startpinid="Diode-24-lPin" endpinid="Node-25-1" pointList="-312,-132,-324,-132" />
+
+<item itemtype="Connector" uid="Connector-48" startpinid="Node-25-2" endpinid="elCapacitor-10-rPin" pointList="-324,-132,-340,-132" />
+
+<item itemtype="Connector" uid="Connector-51" startpinid="Node-27-2" endpinid="74HC4022-1-MR" pointList="-268,-132,-252,-132" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="Diode-24-rPin" endpinid="Node-27-1" pointList="-280,-132,-268,-132" />
+
+<item itemtype="Connector" uid="Connector-30" startpinid="Switch-5-pinP0" endpinid="Node-27-0" pointList="-236,-88,-268,-88,-268,-132" />
+
+</circuit>

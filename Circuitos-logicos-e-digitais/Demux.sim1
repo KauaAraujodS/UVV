@@ -1,0 +1,65 @@
+<circuit version="1.0.0" rev="1378" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" >
+
+<item itemtype="Led" CircId="Led-2" mainComp="false" Show_id="false" Show_Val="false" Pos="0,-200" rotation="0" hflip="1" vflip="1" label="Led-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Orange" Grounded="true" Threshold="2 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-3" mainComp="false" Show_id="false" Show_Val="false" Pos="0,-172" rotation="0" hflip="1" vflip="1" label="Led-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Purple" Grounded="true" Threshold="3.5 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-4" mainComp="false" Show_id="false" Show_Val="false" Pos="0,-144" rotation="0" hflip="1" vflip="1" label="Led-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Blue" Grounded="true" Threshold="3.6 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Demux" CircId="Demux-5" mainComp="false" Show_id="false" Show_Val="false" Pos="-108,-152" rotation="0" hflip="1" vflip="1" label="Demux-5" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Address_Bits="2 _bits" Inverted="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-200,-152" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-6" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Ground" CircId="Ground-204" mainComp="false" Show_id="false" Show_Val="false" Pos="-116,-224" rotation="0" hflip="1" vflip="-1" label="Ground-204" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="SwitchDip" CircId="SwitchDip-206" mainComp="false" Show_id="false" Show_Val="false" Pos="-148,-76" rotation="0" hflip="1" vflip="1" label="SwitchDip-206" idLabPos="-16,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Size="2 _Switches" State="252" />
+
+<item itemtype="Led" CircId="Led-215" mainComp="false" Show_id="false" Show_Val="false" Pos="0,-112" rotation="0" hflip="1" vflip="1" label="Led-215" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Green" Grounded="true" Threshold="3.5 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="ResistorDip" CircId="ResistorDip-219" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-56,-144" rotation="0" hflip="1" vflip="1" label="ResistorDip-219" idLabPos="-24,-40" labelrot="0" valLabPos="5,-26" valLabRot="90" Resistance="50 Ω" Size="4 _Resist." />
+
+<item itemtype="TextComponent" CircId="TextComponent-236" mainComp="false" Show_id="false" Show_Val="false" Pos="-224,-68" rotation="0" hflip="1" vflip="1" label="TextComponent-236" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Fixed_Width="false" Text="O Demux seleciona a saída para onde&#xa;a entrada DI será enviada.&#xa;A saída é selecionada pelos bits S0 e S1.&#xa;Por exemplo, para DI &#x3D 1:&#xa;S1 S0 O0 O1 O2 O3&#xa;0  0  1  0  0  0&#xa;1  0  0  0  1  0&#xa;" />
+
+<item itemtype="Node" CircId="Node-208" mainComp="false" Pos="-168,-152" />
+
+<item itemtype="Node" CircId="Node-211" mainComp="false" Pos="-168,-100" />
+
+<item itemtype="Node" CircId="Node-232" mainComp="false" Pos="-36,-160" />
+
+<item itemtype="Connector" uid="connector-155" startpinid="Fixed Voltage-6-outnod" endpinid="Node-208-0" pointList="-184,-152,-168,-152" />
+
+<item itemtype="Connector" uid="Connector-205" startpinid="Ground-204-Gnd" endpinid="Demux-5-in4" pointList="-116,-208,-116,-184" />
+
+<item itemtype="Connector" uid="Connector-207" startpinid="SwitchDip-206-switch0-pinP" endpinid="Node-211-0" pointList="-156,-100,-168,-100" />
+
+<item itemtype="Connector" uid="Connector-209" startpinid="Node-208-2" endpinid="Demux-5-in3" pointList="-168,-152,-132,-152" />
+
+<item itemtype="Connector" uid="Connector-210" startpinid="SwitchDip-206-switch1-pinP" endpinid="Node-211-1" pointList="-156,-92,-168,-92,-168,-100" />
+
+<item itemtype="Connector" uid="Connector-212" startpinid="Node-211-2" endpinid="Node-208-1" pointList="-168,-100,-168,-152" />
+
+<item itemtype="Connector" uid="Connector-213" startpinid="SwitchDip-206-switch0-pinN" endpinid="Demux-5-in1" pointList="-132,-100,-108,-100,-108,-120" />
+
+<item itemtype="Connector" uid="Connector-214" startpinid="SwitchDip-206-switch1-pinN" endpinid="Demux-5-in0" pointList="-132,-92,-100,-92,-100,-120" />
+
+<item itemtype="Connector" uid="Connector-220" startpinid="ResistorDip-219-resistor0-ePin0" endpinid="Demux-5-out0" pointList="-72,-168,-84,-168" />
+
+<item itemtype="Connector" uid="Connector-224" startpinid="Demux-5-out1" endpinid="ResistorDip-219-resistor1-ePin2" pointList="-84,-160,-72,-160" />
+
+<item itemtype="Connector" uid="Connector-225" startpinid="ResistorDip-219-resistor2-ePin4" endpinid="Demux-5-out2" pointList="-72,-152,-84,-152" />
+
+<item itemtype="Connector" uid="Connector-226" startpinid="Demux-5-out3" endpinid="ResistorDip-219-resistor3-ePin6" pointList="-84,-144,-72,-144" />
+
+<item itemtype="Connector" uid="Connector-227" startpinid="Led-215-lPin" endpinid="ResistorDip-219-resistor3-ePin7" pointList="-16,-112,-40,-112,-40,-144" />
+
+<item itemtype="Connector" uid="Connector-228" startpinid="Led-2-lPin" endpinid="ResistorDip-219-resistor0-ePin1" pointList="-16,-200,-40,-200,-40,-168" />
+
+<item itemtype="Connector" uid="Connector-231" startpinid="ResistorDip-219-resistor1-ePin3" endpinid="Node-232-0" pointList="-40,-160,-36,-160" />
+
+<item itemtype="Connector" uid="Connector-233" startpinid="Node-232-2" endpinid="ResistorDip-219-resistor1-ePin3" pointList="-36,-160,-40,-160" />
+
+<item itemtype="Connector" uid="Connector-234" startpinid="Node-232-1" endpinid="Led-3-lPin" pointList="-36,-160,-16,-160,-16,-172" />
+
+<item itemtype="Connector" uid="Connector-235" startpinid="Led-4-lPin" endpinid="ResistorDip-219-resistor2-ePin5" pointList="-16,-144,-16,-152,-40,-152" />
+
+</circuit>

@@ -1,0 +1,97 @@
+<circuit version="" rev="1751" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" >
+
+<item itemtype="DecToBcd" CircId="DecToBcd-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-84,-12" rotation="0" hflip="1" vflip="1" label="DecToBcd-1" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" _16_Bits="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Invert_Inputs="false" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Inverted="false" Open_Collector="false" pd_n="1 _Gates" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-292,-116" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-3" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Ground" CircId="Ground-13" mainComp="false" Show_id="false" Show_Val="false" Pos="-76,-84" rotation="0" hflip="1" vflip="-1" label="Ground-13" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="And Gate" CircId="And Gate-24" mainComp="false" Show_id="false" Show_Val="false" Pos="-148,16" rotation="0" hflip="1" vflip="1" label="And Gate-24" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Invert_Inputs="false" Num_Inputs="2 _Inputs" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Inverted="false" Open_Collector="false" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="And Gate" CircId="And Gate-25" mainComp="false" Show_id="false" Show_Val="false" Pos="-148,-44" rotation="0" hflip="1" vflip="1" label="And Gate-25" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Invert_Inputs="false" Num_Inputs="2 _Inputs" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Inverted="false" Open_Collector="false" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="And Gate" CircId="And Gate-26" mainComp="false" Show_id="false" Show_Val="false" Pos="-148,-24" rotation="0" hflip="1" vflip="1" label="And Gate-26" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Invert_Inputs="false" Num_Inputs="2 _Inputs" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Inverted="false" Open_Collector="false" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="SwitchDip" CircId="SwitchDip-27" mainComp="false" Show_id="false" Show_Val="false" Pos="-236,-92" rotation="-90" hflip="1" vflip="1" label="SwitchDip-27" idLabPos="-16,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Size="2 _Switches" State="1020" />
+
+<item itemtype="Buffer" CircId="Buffer-29" mainComp="false" Show_id="false" Show_Val="false" Pos="-224,-76" rotation="0" hflip="1" vflip="1" label="Buffer-29" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Invert_Inputs="false" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Inverted="true" Open_Collector="false" Tristate="false" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="Buffer" CircId="Buffer-30" mainComp="false" Show_id="false" Show_Val="false" Pos="-224,-56" rotation="0" hflip="1" vflip="1" label="Buffer-30" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Invert_Inputs="false" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Inverted="true" Open_Collector="false" Tristate="false" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="And Gate" CircId="And Gate-39" mainComp="false" Show_id="false" Show_Val="false" Pos="-148,-4" rotation="0" hflip="1" vflip="1" label="And Gate-39" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Invert_Inputs="false" Num_Inputs="2 _Inputs" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Inverted="false" Open_Collector="false" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="7-Seg BCD" CircId="7-Seg BCD-44" mainComp="false" Show_id="false" Show_Val="false" Pos="-36,-76" rotation="0" hflip="1" vflip="1" label="7-Seg BCD-44" idLabPos="-16,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="TextComponent" CircId="TextComponent-49" mainComp="false" Show_id="false" Show_Val="false" Pos="-272,44" rotation="0" hflip="1" vflip="1" label="TextComponent-49" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Font_Color="#000080" Fixed_Width="false" Text="O Decodificador Decimal/BCD apresenta em suas&#xa;saídas (ABCD) o código binário correspondente&#xa;à sua entrada ativada. Por exemplo:&#xa;D1 &#x3D 1 - saída ABCD &#x3D 1 0 0 0 (1 decimal)&#xa;D2 &#x3D 1 - saída ABCD &#x3D 0 1 0 0 (2 decimal)&#xa;D3 &#x3D 1 - saída ABCD &#x3D 1 1 0 0 (3 decimal)&#xa;D10 &#x3D 1  - saida ABCD &#x3D 0 0 0 0 (0 decimal)" />
+
+<item itemtype="Node" CircId="Node-28" mainComp="false" Pos="-260,-116" />
+
+<item itemtype="Node" CircId="Node-31" mainComp="false" Pos="-260,-76" />
+
+<item itemtype="Node" CircId="Node-32" mainComp="false" Pos="-252,-56" />
+
+<item itemtype="Node" CircId="Node-33" mainComp="false" Pos="-196,-48" />
+
+<item itemtype="Node" CircId="Node-38" mainComp="false" Pos="-204,-20" />
+
+<item itemtype="Node" CircId="Node-40" mainComp="false" Pos="-260,-28" />
+
+<item itemtype="Node" CircId="Node-41" mainComp="false" Pos="-252,-40" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="Ground-13-Gnd" endpinid="DecToBcd-1-in15" pointList="-76,-68,-76,-60" />
+
+<item itemtype="Connector" uid="Connector-31" startpinid="And Gate-24-in0" endpinid="Node-33-0" pointList="-164,12,-196,12,-196,-48" />
+
+<item itemtype="Connector" uid="Connector-32" startpinid="And Gate-24-in1" endpinid="Node-38-0" pointList="-164,20,-204,20,-204,-20" />
+
+<item itemtype="Connector" uid="Connector-33" startpinid="Fixed Voltage-3-outnod" endpinid="Node-28-0" pointList="-276,-116,-260,-116" />
+
+<item itemtype="Connector" uid="Connector-34" startpinid="Node-28-1" endpinid="SwitchDip-27-switch1-pinN" pointList="-260,-116,-252,-116,-252,-108" />
+
+<item itemtype="Connector" uid="Connector-35" startpinid="Node-28-2" endpinid="SwitchDip-27-switch0-pinN" pointList="-260,-116,-260,-108" />
+
+<item itemtype="Connector" uid="Connector-36" startpinid="Buffer-29-in0" endpinid="Node-31-1" pointList="-240,-76,-260,-76" />
+
+<item itemtype="Connector" uid="Connector-37" startpinid="Node-31-2" endpinid="SwitchDip-27-switch0-pinP" pointList="-260,-76,-260,-84" />
+
+<item itemtype="Connector" uid="Connector-38" startpinid="Buffer-30-in0" endpinid="Node-32-1" pointList="-240,-56,-252,-56" />
+
+<item itemtype="Connector" uid="Connector-39" startpinid="Node-32-2" endpinid="SwitchDip-27-switch1-pinP" pointList="-252,-56,-252,-84" />
+
+<item itemtype="Connector" uid="Connector-40" startpinid="Buffer-29-out" endpinid="Node-33-1" pointList="-208,-76,-196,-76,-196,-48" />
+
+<item itemtype="Connector" uid="Connector-46" startpinid="And Gate-25-in1" endpinid="Node-41-0" pointList="-164,-40,-252,-40" />
+
+<item itemtype="Connector" uid="Connector-48" startpinid="And Gate-26-in0" endpinid="Node-40-0" pointList="-164,-28,-260,-28" />
+
+<item itemtype="Connector" uid="Connector-50" startpinid="And Gate-26-in1" endpinid="Node-38-1" pointList="-164,-20,-204,-20" />
+
+<item itemtype="Connector" uid="Connector-54" startpinid="And Gate-39-in1" endpinid="Node-41-1" pointList="-164,0,-252,0,-252,-40" />
+
+<item itemtype="Connector" uid="Connector-43" startpinid="And Gate-39-in0" endpinid="Node-40-1" pointList="-164,-8,-260,-8,-260,-28" />
+
+<item itemtype="Connector" uid="Connector-59" startpinid="And Gate-24-out" endpinid="DecToBcd-1-in9" pointList="-132,16,-116,16,-116,28,-108,28" />
+
+<item itemtype="Connector" uid="Connector-60" startpinid="And Gate-25-out" endpinid="DecToBcd-1-in0" pointList="-132,-44,-108,-44" />
+
+<item itemtype="Connector" uid="Connector-61" startpinid="And Gate-26-out" endpinid="DecToBcd-1-in1" pointList="-132,-24,-124,-24,-124,-36,-108,-36" />
+
+<item itemtype="Connector" uid="Connector-62" startpinid="And Gate-39-out" endpinid="DecToBcd-1-in2" pointList="-132,-4,-116,-4,-116,-28,-108,-28" />
+
+<item itemtype="Connector" uid="Connector-63" startpinid="7-Seg BCD-44-in0" endpinid="DecToBcd-1-out0" pointList="-24,-44,-24,-28,-60,-28" />
+
+<item itemtype="Connector" uid="Connector-64" startpinid="7-Seg BCD-44-in1" endpinid="DecToBcd-1-out1" pointList="-32,-44,-32,-20,-60,-20" />
+
+<item itemtype="Connector" uid="Connector-65" startpinid="7-Seg BCD-44-in2" endpinid="DecToBcd-1-out2" pointList="-40,-44,-40,-12,-60,-12" />
+
+<item itemtype="Connector" uid="Connector-66" startpinid="7-Seg BCD-44-in3" endpinid="DecToBcd-1-out3" pointList="-48,-44,-48,-4,-60,-4" />
+
+<item itemtype="Connector" uid="Connector-45" startpinid="Node-33-2" endpinid="And Gate-25-in0" pointList="-196,-48,-164,-48" />
+
+<item itemtype="Connector" uid="Connector-46" startpinid="Node-40-2" endpinid="Node-31-0" pointList="-260,-28,-260,-76" />
+
+<item itemtype="Connector" uid="Connector-47" startpinid="Node-38-2" endpinid="Buffer-30-out" pointList="-204,-20,-204,-56,-208,-56" />
+
+<item itemtype="Connector" uid="Connector-48" startpinid="Node-41-2" endpinid="Node-32-0" pointList="-252,-40,-252,-56" />
+
+</circuit>
