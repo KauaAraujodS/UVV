@@ -1,0 +1,32 @@
+# ******************************************************************************
+# LAB      : scrabble (palavras cruzadas)
+# LINGUAGEM: C
+# ******************************************************************************
+
+Neste exercício você escreverá um programa que calculará quanto vale uma palavra
+em um jogo de palavras cruzadas (scrabble), e imprimirá o resultado de um jogo
+simples entre dois jogadores. Seu programa deverá ser chamado de "scrabble.c".
+Verifique o documento "scrabble.pdf" para maiores informações.
+
+Utilize o arquivo modelo "scrabble.c" para começar. Não se esqueça de incluir,
+no comentário do início do arquivo, seu nome completo, seu número de matrícula,
+turma e email. Leia com atenção a declaração de honestidade acadêmica que está
+no comentário inicial do arquivo.
+
+Atenção! Lembre-se de que:
+
+1) Ao enviar qualquer código para ser avaliado, você está GARANTINDO QUE FOI
+   VOCÊ QUE FEZ O CÓDIGO, que não houve plágio e que você é o único responsável
+   pelo seu programa. Você está ATESTANDO que seguiu todas as normas de
+   integridade acadêmica da disciplina;
+
+2) Todos os códigos enviados são VERIFICADOS CONTRA PLÁGIO DE FORMA AUTOMÁTICA,
+   através do uso de ferramentas automatizadas avançadas de detecção de plágio
+   (MOSS e COMPARE50). Os alunos que não seguirem todas as normas de integridade
+   acadêmica estão sujeitos à penalidades conforme as regras da disciplina e/ou
+   da instituição; e
+
+3) A disciplina pode oferecer uma CLÁUSULA DE ARREPENDIMENTO para alunos que
+   praticaram algum ato de infração às normas de integridade acadêmica.
+   Verifique com seu professor.
+
