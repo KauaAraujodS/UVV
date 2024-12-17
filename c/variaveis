@@ -1,0 +1,16 @@
+/*
+COMENTÁRIOS:
+Conceito:
+É qualquer fato ou evento do mundo real ou abstrato que tenha seus valores alterados ao longo do tempo.
+*/
+// Biblioteca: Input / Output
+#include <stdio.h>   
+// Biblioteca: Operadores Aritméticos
+#include <stdlib.h>  
+
+int main(void) {
+  int idade = 20;
+  float temperatura = 19.8, preco = 20.79;
+  char simbolo = '@';
+  return 0;
+}

@@ -1,0 +1,23 @@
+/*
+ALGORITMO:
+Faça um algoritmo em C que leia de um aluno (1) da academia:
+⟼  Medida da Cintura (em centímetros): MC
+⟼  Medida da Quadril (em centímetros): MQ
+E exiba na tela seu  RCQ  (Relação Cintura-Quadril em %).
+*/
+// ALGORITMO: ENTRADA (Usuário) + PROCESSAMENTO (ULA) + SAÍDA (Objetivo)
+#include <stdio.h>
+#include <stdlib.h>
+int main(void) {
+  // ALGORITMO: ENTRADA (Usuário) + Declaração
+  float MC, MQ, RCQ;
+  printf("Medida da Cintura (em centímetros): ");
+  scanf("%f", &MC);
+  printf("Medida do Quadril (em centímetros): ");
+  scanf("%f", &MQ);
+  // ALGORITMO: PROCESSAMENTO (ULA)
+  RCQ = MC / MQ * 100; // Porcentagem (%)
+  // SAÍDA (Objetivo)
+  printf("RCQ  (Relação Cintura-Quadril): %.2f %%\n", RCQ);
+  return 0;
+}

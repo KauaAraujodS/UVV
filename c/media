@@ -1,0 +1,51 @@
+// ENUNCIADO DO EXEMPLO: Notas da UVV
+// Escrever um algoritmo que leia a nota do 1º e 2º Bimestre de um (1) aluno e
+//exibir a sua média semestral (MS) com sua classificação (Status), a saber:
+//-> Nota Semestral: [0.0, 3.0[ => Aluno Status: Reprovação.
+//-> Nota Semestral Final: [3.0, 7.0[ => Aluno Status: Prova Final.
+//    -> Ler [0.0, 10.0] a nota da Prova Final e exibir o Status:
+//       -> [0.0, 5.0[: Status: Reprovação.
+//      -> [5.0, 10.0]: Status: Aprovação.
+//-> Nota Semestral Final: [7, 10] => Aluno Status: Aprovação.
+/*
+ ENUNCIADO DO EXEMPLO: Notas da UVV
+ Escrever um algoritmo que leia a nota [0.0, 10.0] do 1º e 2º Bimestre de um (1) aluno e exibir a sua média semestral (MS) com sua classificação (Status), a saber:
+-> Nota Semestral      : [0.0, 3.0[ => Aluno Status: Reprovação.
+-> Nota Semestral Final: [3.0, 7.0[ => Aluno Status: Prova Final.
+    -> Ler [0.0, 10.0] a nota da Prova Final e exibir o Status:
+       -> [0.0, 5.0[: Status: Reprovação.
+       -> [5.0, 10.0]: Status: Aprovação.
+-> Nota Semestral Final: [7.0, 10.0] => Aluno Status: Aprovação.
+*/
+#include <stdio.h>
+
+int main(void) {
+  float B1, B2, PF, MEDIA;
+  printf("Nota [0.0, 10.0] - 1° BIMESTRE: "); scanf("%f", &B1);
+  printf("Nota [0.0, 10.0] - 2° BIMESTRE: "); scanf("%f", &B2);
+  // TRATAMENTO DE ERRO:
+  if(B1 < 0 || B1 > 10 || B2 < 0 || B2 > 10)
+    printf("ERRO: Dados de entrada.\n");
+  else{
+    MEDIA = (B1 + B2) / 2;
+    printf("MÉDIA PARCIAL: %.1f\n", MEDIA);
+    if(MEDIA < 3.0)
+      printf("STATUS: REPROVAÇÃO\n");
+    else if(MEDIA < 7.0){
+      printf("Nota [0.0, 10.0] - PROVA FINAL: ");
+      scanf("%f, &PF");
+      if (PF < 0 || PF > 10)
+        printf ("ERRO: Dados de entrada.\n");
+      else{
+        MEDIA = (MEDIA + PF) / 2;
+        printf("MÉDIA FINAL: %.1f\n", MEDIA);
+        if (MEDIA < 5.0)
+          printf("STATUS: REPROVAÇÃO\n");
+        else
+          }
+      
+    }
+
+  }
+  return 0;
+}

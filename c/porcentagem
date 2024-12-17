@@ -1,0 +1,32 @@
+/*
+ALGOTIMO: Como calcular Porcentagens?
+Escrever um algoritmo em C que leia de uma (1) mercadoria:
+  -> Preço: R$
+  -> Quantidade: Unidade
+  -> Reajuste (Desconto): %
+exbir na tela:
+  -> Total a pagar: sem desconto
+  -> Total a pagar: com desconto
+*/
+#include <stdio.h>
+
+int main(void) {
+  // ENTRADA:
+  float preco, reajuste, total, desconto;
+  int quantidade;
+  printf("DADOS DA MERCADORIA:\n");
+  printf("PREÇO: R$ ");
+  scanf("%f", &preco);
+  printf("Quantidade (Unid.): ");
+  scanf("%i", &quantidade);
+  printf("Reajuste (%%): ");
+  scanf("%f", &reajuste);
+  // PROCESSAMENTO:
+  total = preco * quantidade;
+  // desconto = total - reajuste / 100 * total;
+  desconto = total * (1 - reajuste / 100);
+  // SAÍDA (Objetivos):
+  printf("TOTAL A PAGAR (0 %% OFF): R$ %.2f\n", total);
+  printf("TOTAL A PAGAR (%.1f %% OFF): R$ %.2f\n", reajuste, desconto);
+  return 0;
+}

@@ -1,0 +1,20 @@
+/*
+ALGORITMO:
+Escrever um algoritmo em C que leia de um (1) aluno sua nota do 1º e 2º bimestre
+e exiba na tela sua média semestral.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+int main(void) {
+  // ALGORITMO: ENTRADA
+  float B1, B2, media;
+  printf("Entre com a nota - 1° Bimestre (0.0-10.0): ");
+  scanf("%f", &B1);
+  printf("Entre com a nota - 2° Bimestre (0.0-10.0): ");
+  scanf("%f", &B2);
+  // PROCESSAMENTO (ULA)
+  media = (B1 + B2) / 2;
+  // SAÍDA (Objetivo)
+  printf("Média semestral: %.1f\n", media);
+  return 0;
+}

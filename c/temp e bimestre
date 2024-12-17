@@ -1,0 +1,19 @@
+// ENTRADA / SAÍDA DE DADOS: printf + scanf
+#include <stdio.h>
+
+int main(void) {
+  int idade;
+  float temperatura, bimestre1;
+  printf("LER OS DADOS DE ENTRADA:\n");
+  printf("Entre com sua idade (em anos): ");
+  scanf("%i", &idade);
+  printf("Entre com a temperatura (em Graus Celsius): ");
+  scanf("%f", &temperatura);
+  printf("Entre com a nota 1° Bimestre: ");
+  scanf("%f", &bimestre1);
+  printf("SAÍDA DOS DADOS:\n");
+  printf("Você disse que tem %i anos.\n", idade);
+  printf("Você disse que a temperatura %.1f Graus Celsius.\n", temperatura);
+  printf("Você disse que tirou no 1° Bimestre: %.1f\n", bimestre1);
+  return 0;
+}

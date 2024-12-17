@@ -1,0 +1,61 @@
+// Faça um algoritmo em C que leia:
+//⟼  Medidas de um Tanque de combustível - LAP (em metros):
+//⟼  Preço por Litros: Álcool e Gasolina.
+// e exiba na tela o total a ser pago para encher este tanque de combustível:
+//⟼  Somente com gasolina;
+//⟼  Somente com Álcool;
+//⟼  na proporção: 20% de Álcool e 80% de Gasolina.
+//(Sabendo que,  1 metro3=1000Litros .)
+
+// Nome: Kauã Araujo de Souza
+// Matricula: 202416377
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  float LAP, precoAlcool, precoGasolina, totalGasolina, totalAlcool, totalMisto,
+      volumeAlcool, volumeGasolina, porcentagemAlcool, porcentagemGasolina;
+  // to pedidndo a medida do tanque em m³ (LAP)
+  printf("Digite a medida do tanque de combustivel (em metros cubicos):");
+  scanf("%f", &LAP);
+
+  // to solicitando o preco do alcool e gasolina
+  printf("Digite o preço em litros de alcool: ");
+  scanf("%f", &precoAlcool);
+  printf("Digite o preço do litro de Gasolina: ");
+  scanf("%f", &precoGasolina);
+  //porcentagem
+  printf("Digite a porcentagem de alcool: ");
+       scanf("%f", &porcentagemAlcool);
+  printf("Digite a porcentagem de gasolina: ");
+       scanf("%f", &porcentagemGasolina);
+       
+  // calcular volime em litrs
+  float volumeLitros = LAP * 1000;
+  // calc o custo pra encger o tanque somente com gasolina
+  totalGasolina = volumeLitros * precoGasolina;
+  // calcula o custo só alcool
+  totalAlcool = volumeLitros * precoAlcool;
+  // 20% de alcool e 80% de gasolina
+  
+
+  volumeAlcool = volumeLitros * (porcentagemAlcool / 100);
+  volumeGasolina = volumeGasolina * (porcentagemGasolina/ 100);
+  totalMisto = (volumeAlcool * precoAlcool) + (volumeGasolina * precoGasolina);
+
+  // saidas
+
+  printf("volume do taque em metros cubicos: %.2f m³\n", LAP);
+  printf("volume do tanque em litros: %.2f L\n", volumeLitros);
+  printf("custo para encher o tanque 100% com alcool: R$ %.2f\n", totalAlcool);
+  printf("custo pra encher o tanque 100% com gasolina: R$ %.2f\n",
+         totalGasolina);
+  printf("custo pra encher o tanque com %.2f%% de alcool: R$ %.2f\n",
+         porcentagemAlcool, volumeAlcool * precoAlcool);
+  printf("custo pra encher o tanque com %.2f%% de gasolina: R$ %.2f\n",
+         porcentagemGasolina, volumeGasolina * precoGasolina);
+  printf("custo pra encher o tanque %.2f%% de alcool e %.2f%% de gasolina: R$ %.2f\n", porcentagemAlcool, porcentagemGasolina, totalMisto);
+
+  return 0;
+}

@@ -1,0 +1,32 @@
+/*
+ALGORITMO: MINI CALCULADORA (int)
+Fazendo as operações aritméticas de:
+Operadores: Aritméticos:
+  -> Soma: +
+  -> Subtração: -
+  -> Multiplicação: *
+  -> Divisão (float): /
+  -> DIV: Quociente da Divisão (int): int/int = int
+  -> MOD: Resto da Divisão (int): int%int = int
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  // ALGORITMO: ENTRADA + PROCESSAMENTO (ULA) + SAÍDA
+  // ENTRADA: Ler os dados do usuário
+  int N1, N2;
+  printf("MINI CALCULADORA DE INTEIROS:\n");
+  printf("ENTRE COM VALOR INTEIRO DE N1: ");
+  scanf("%i", &N1);
+  printf("ENTRE COM VALOR INTEIRO DE N2: ");
+  scanf("%i", &N2);
+  // PROCESSAMENTO (ULA) + SAÍDA
+  printf("SOMA           : N1 + N2   = %i + %i = %i\n", N1, N2, N1 + N2);
+  printf("SUBTRAÇÃO      : N1 - N2   = %i - %i = %i\n", N1, N2, N1 - N2);
+  printf("MULTIPLICAÇÃO  : N1 * N2   = %i * %i = %i\n", N1, N2, N1 * N2);
+  printf("DIVISÃO        : N1 / N2   = %i / %i = %.1f\n", N1, N2, (float) N1 / N2);
+  printf("DIVISÃO INTEIRA: N1 div N2 = %i / %i = %i\n", N1, N2, N1 / N2);
+  printf("RESTO   INTEIRA: N1 mod N2 = %i %% %i = %i\n", N1, N2, N1 % N2);
+  return 0;
+}
