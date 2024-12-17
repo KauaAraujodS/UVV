@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: #000;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'SF Pro Text', 'SF Pro Icons', Arial, Helvetica, sans-serif;
+}
+
+.tamanho {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: pink;
+    text-align: center;
+    color: black;
+}
+
+header .tamanho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+header a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    transition: .2s;
+    padding: 0 15px;
+}
+
+header a:hover {
+    color: black;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header .imagem_header {
+    width: 100%;
+}
+
+main .divisao {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: beige;
+}
+
+main .divisao .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #861f41;
+    text-align: left;
+}
+
+.subtitle {
+    text-align: left;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%; 
+    color: black;
+    line-height: 1.6;
+}
+
+main .divisao .grid-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 20px;
+    width: 50%;
+}
+
+.caixa {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    background-color: #fdf7f1;
+    color: #861f41;
+    text-align: center;
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    margin: 0;
+    background-color: #861f41;
+    color: white;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: pink;
+    text-align: center;
+    padding: 10px 0;
+}

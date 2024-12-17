@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/finalizar-cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>Finalizar Cadastro - Fortes Engenharia</title>
+</head>
+<body onload="loadData()">
+    <header>
+        <img src="../IMAGES/logo.png" alt="Fortes Engenharia" class="logo">
+    </header>
+    <main>
+        <button onclick="goBack()" class="back-button">&larr;</button>
+        <div class="container">
+            <h2>Cadastre-se</h2>
+            <input type="text" id="username" placeholder="Nome de usuário">
+            <input type="text" id="telefone" placeholder="Telefone">
+            <input type="text" id="telefone2" placeholder="Telefone(2)">
+            <input type="text" id="cnpjcpf" placeholder="CNPJ/CPF">
+            <input type="text" id="bairro" placeholder="Bairro">
+            <input type="text" id="cidade" placeholder="Cidade">
+            <input type="text" id="estado" placeholder="Estado">
+            <input type="text" id="cep" placeholder="CEP">
+            <input type="text" id="area" placeholder="Área da instituição">
+            <textarea id="descricao" placeholder="Descrição"></textarea>
+            <button onclick="storeFinalData();">Finalizar Cadastro</button>
+        </div>
+        <div class="edital">
+            <img src="../IMAGES/edital-icon.png" alt="Edital">
+            <span>Edital</span>
+        </div>
+    </main>
+    <footer>
+        <img src="../IMAGES/logo.png" alt="Fortes Engenharia" class="footer-logo">
+    </footer>
+    <script src="../JS/finalizar-cadastro.js"></script>
+</body>
+</html>
