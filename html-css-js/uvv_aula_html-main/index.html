@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+   
+
+    <section id="table">
+
+    </section>
+
+    <script>
+        fetch('https://www.cbf.com.br/futebol-brasileiro/competicoes/campeonato-brasileiro-serie-a/2024')
+        .then(result => result.text())
+        .then((page)=>{
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(page, "text/html");
+            const area_tabela= document.getElementById('table');
+            const tabela = doc.querySelector('table');
+            area_tabela.appendChild(tabela)
+        })
+    </script>
+
+</body>
+
+</html>

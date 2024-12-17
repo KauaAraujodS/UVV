@@ -1,0 +1,145 @@
+p {
+    text-align: center;
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h4 {
+    text-align: center;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Tac One";
+}
+
+
+
+img {
+    align-items: center;
+    width: 400px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.tac {
+    text-align: center;
+}
+
+
+
+html,
+body {
+    height: 100% !important;
+    font-family: SF Pro Text, SF Pro Icons, Arial, Helvetica, sans-serif;
+}
+
+body {
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+#nav {
+    width: 100%;
+    background-color: black;
+    backdrop-filter: saturate(180%) blur(20px);
+    padding: 1rem;
+}
+
+#navmenu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#navmenu > li {
+    list-style-type: none;
+}
+
+#navmenu > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+table,th,td {
+    border: 2px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+img{
+    width: 70px;
+}
+table{
+    width: 100%;
+    background-color: white;
+}
+
+th {
+    background-color: white;
+    color: white;
+
+}
+
+td{
+    text-align: center;
+
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: white;
+}
+
+.badge {
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    
+}
+
+div.exp {
+    color: white;
+}
+
+#exp {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Tac One";
+}
+
+#comp {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Tac One";
+}
+
+#reds {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Tac One";
+}
